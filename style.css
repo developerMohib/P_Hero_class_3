@@ -3,6 +3,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    pointer-events: stroke;
+}
 img{
     width: 100%;
 }
@@ -10,24 +14,23 @@ img{
     max-width: 1200px;
     margin: auto;
 }
+.flex-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .HeaderMenu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
-
 .Header{
     background-color: black;
     padding: 10px 0px;
 }
-.Header .logo {}
 .Header .logo img{
     max-width: 40px;
 }
-.Header .menu{}
-.Header .menu ul{}
 .Header .menu ul li{
     list-style-type: none;
     display: inline-block;
@@ -37,11 +40,75 @@ img{
     text-decoration: none;
     font-size: 20px;
     padding: 7px 11px;
-    background-color: tomato;
+    background-color: #c10606;
     border-radius: 3px;
     transition: .8s;
 }
 .Header .menu ul li a:hover{
     color: tomato;
     background-color: black;
+}
+#Home{
+    background-image:
+    linear-gradient(to left, rgb(53 53 54 / 50%), rgb(0 0 0)),
+    url(images/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+#About{
+    background-image:
+    linear-gradient(to left, rgb(53 53 54 / 50%), rgb(0 0 0)),
+    url(images/experience.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+#Services{
+    background-image:
+    linear-gradient(to left, rgb(53 53 54 / 50%), rgb(0 0 0)),
+    url(images/contact.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+#Portfolio{
+    background-image:
+    linear-gradient(to left, rgb(53 53 54 / 50%), rgb(0 0 0)),
+    url(images/testimonial.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+#Contact{
+    background-image:
+    linear-gradient(to left, rgb(53 53 54 / 50%), rgb(0 0 0)),
+    url(images/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+#Footer{
+    background-color: rgb(24, 24, 24);
+    text-align: center;
+    padding: 15px 0px;
+}
+.social-icon ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.social-icon ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 0px 12px;
+}
+.social-icon ul li a:hover{
+    text-decoration-line: underline;
+    color: tomato;
+}
+.copyright h3{
+    color: #fff;
+    font-weight: 300;
 }
